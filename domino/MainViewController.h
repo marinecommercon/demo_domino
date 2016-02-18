@@ -15,8 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *date;
 @property (weak, nonatomic) IBOutlet UIButton *notif;
 
-- (void) getTime;
-- (void) getDate;
+- (void) setTime;
+- (void) setDate;
 
 
 

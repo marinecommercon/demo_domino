@@ -7,9 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "Mixpanel.h"
-
-#define MIXPANEL_TOKEN @"f666678f13f344ecdd00d02df9c45ed5"
 
 @interface AppDelegate ()
 
@@ -26,50 +23,7 @@
     
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     
-    // Initialize Mixpanel with your project token
-    [Mixpanel sharedInstanceWithToken:MIXPANEL_TOKEN];
-    Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    
-    // Tell iOS you want your app to receive push notifications
-    // This code will work in iOS 8.0 xcode 6.0 or later:
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
-    {
-        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
-        [[UIApplication sharedApplication] registerForRemoteNotifications];
-    }
-    // This code will work in iOS 7.0 and below:
-    else
-    {
-        [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeNewsstandContentAvailability| UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
-    }
-    
-    // Call .identify to flush the People record to Mixpanel
-    [mixpanel identify:mixpanel.distinctId];
-    
     return YES;
-}
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-    Mixpanel *mixpanel = [Mixpanel sharedInstance];
-    [mixpanel.people addPushDeviceToken:deviceToken];
-}
-
-- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
-    NSString *str = [NSString stringWithFormat: @"Error: %@", err];
-    NSLog(@"%@",str);
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [self handleRemoteNotification:userInfo forApplication:application];
-}
-
-- (void)handleRemoteNotification:(NSDictionary *)remoteNotification forApplication:(UIApplication *)application {
-    NSLog(@"Receive notification");
-    
-    NSString *alert = [[remoteNotification objectForKey:@"aps"]objectForKey:@"alert"];
-    
-    NSLog(@"Message : %@", alert);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

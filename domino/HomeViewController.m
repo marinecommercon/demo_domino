@@ -24,7 +24,6 @@
 {
     [super viewDidAppear:animated];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSLog([defaults objectForKey:@"showPopup"]);
     if([[defaults objectForKey:@"showPopup"] integerValue] == 1){
         [_popup setHidden:NO];
     } else {
@@ -32,7 +31,6 @@
     }
     if([[defaults objectForKey:@"showPopupText"] integerValue] == 1){
         
-        NSString *dede = [defaults objectForKey:@"popupText"];
         [_popupText setText:[defaults stringForKey:@"popupText"]];
         [_popupText setHidden:NO];
     } else {

@@ -57,7 +57,7 @@
     [defaults setValue:@"1" forKey:@"showPopupText"];
     [defaults setValue:@"1" forKey:@"showPopup"];
     
-    HomeViewController *prevVC = [self.navigationController.viewControllers objectAtIndex:0];
+    HomeViewController *prevVC = [self.navigationController.viewControllers objectAtIndex:1];
     [self.navigationController popToViewController:prevVC animated:YES];
     
 }
