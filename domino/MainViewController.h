@@ -11,12 +11,15 @@
 @interface MainViewController : UIViewController
 
 @property (strong, nonatomic) NSURL *printerURL;
+@property (weak, nonatomic) IBOutlet UIButton *buttonPrinter;
 @property (weak, nonatomic) IBOutlet UITextField *time;
 @property (weak, nonatomic) IBOutlet UITextField *date;
 @property (weak, nonatomic) IBOutlet UIButton *notif;
 
-- (void) setTime;
-- (void) setDate;
+
+- (IBAction)buttonPrinter:(id)sender;
+- (void) getTime;
+- (void) getDate;
 
 
 

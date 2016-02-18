@@ -12,8 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *back;
 @property (weak, nonatomic) IBOutlet UIButton *popup;
-@property (weak, nonatomic) IBOutlet UITextView *popupText;
-
 
 - (IBAction)back:(id)sender;
 - (IBAction)cancel:(id)sender;

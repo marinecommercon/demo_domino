@@ -13,12 +13,19 @@
 @property (weak, nonatomic) IBOutlet UIButton *back;
 @property (weak, nonatomic) IBOutlet UITextField *firstName;
 @property (weak, nonatomic) IBOutlet UITextField *lastName;
-@property (weak, nonatomic) IBOutlet UITextField *address;
-@property (weak, nonatomic) IBOutlet UITextField *cp;
-@property (weak, nonatomic) IBOutlet UITextField *city;
+@property (strong, nonatomic) UIPrinter *selectedPrinter;
 @property (nonatomic,assign) BOOL moved;
 
 - (IBAction)back:(id)sender;
 - (IBAction)buttonNext:(id)sender;
 
+
+
+-(NSString*)getPDFFileName;
++(void)drawPDF:(NSString*)fileName;
++(void)drawFlyer;
++(void)drawNameOnFlyer;
++(void)drawImage:(UIImage*)image inRect:(CGRect)rect;
+
 @end
+

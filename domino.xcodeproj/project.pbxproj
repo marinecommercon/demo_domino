@@ -22,8 +22,9 @@
 		3E8D0654DE9A7CF5146E6755 /* libPods-dominoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D1AD72A0C5E4F6BF739652 /* libPods-dominoTests.a */; };
 		43B7E75A6DF46A3E89A41957 /* libPods-domino.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BB29A33CE61BA8257FE7F1 /* libPods-domino.a */; };
 		45F5E52C98BCBD44CCB7E201 /* libPods-dominoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E55071AE2C8B54B4694EF1 /* libPods-dominoUITests.a */; };
-		780698371C637A28000CC789 /* ConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780698361C637A28000CC789 /* ConfirmationViewController.m */; };
 		7861DE041C760EB300A20498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7861DE031C760EB300A20498 /* Main.storyboard */; };
+		78E74DF81C7619AF004AB037 /* ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E74DF71C7619AF004AB037 /* ipad.storyboard */; };
+		78E74DFA1C7619B5004AB037 /* iphone4s.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E74DF91C7619B5004AB037 /* iphone4s.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,9 +80,9 @@
 		55338B659C7ECB21D20ED8B6 /* Pods-dominoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dominoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dominoTests/Pods-dominoTests.release.xcconfig"; sourceTree = "<group>"; };
 		59E55071AE2C8B54B4694EF1 /* libPods-dominoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dominoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F7BE97A6E0222D8EF3F4C2 /* Pods-domino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-domino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-domino/Pods-domino.debug.xcconfig"; sourceTree = "<group>"; };
-		780698351C637A28000CC789 /* ConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationViewController.h; sourceTree = "<group>"; };
-		780698361C637A28000CC789 /* ConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationViewController.m; sourceTree = "<group>"; };
 		7861DE031C760EB300A20498 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		78E74DF71C7619AF004AB037 /* ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ipad.storyboard; sourceTree = "<group>"; };
+		78E74DF91C7619B5004AB037 /* iphone4s.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iphone4s.storyboard; sourceTree = "<group>"; };
 		A8728A36DF87F935AFA17659 /* Pods-dominoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dominoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dominoUITests/Pods-dominoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4BB29A33CE61BA8257FE7F1 /* libPods-domino.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-domino.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BE66751539460B051D1E1F /* Pods-dominoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dominoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dominoUITests/Pods-dominoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,8 +138,9 @@
 				14A652051C230F5F0076299F /* Assets.xcassets */,
 				1480E1341C2997D5009FC5A6 /* flyer.png */,
 				14D61A7A1C1DB4DA002F8E01 /* Flyer.xib */,
+				78E74DF71C7619AF004AB037 /* ipad.storyboard */,
+				78E74DF91C7619B5004AB037 /* iphone4s.storyboard */,
 				7861DE031C760EB300A20498 /* Main.storyboard */,
-				1413CB351C11E297003B3CC9 /* Supporting Files */,
 				1413CB381C11E297003B3CC9 /* AppDelegate.h */,
 				1413CB391C11E297003B3CC9 /* AppDelegate.m */,
 				14959BCD1C120A12008E92D3 /* MainViewController.h */,
@@ -151,8 +153,7 @@
 				1438EEC41C1DDA7100C312C6 /* WebstoreViewController.m */,
 				1438EEC61C1DDCAC00C312C6 /* FavoritesViewController.h */,
 				1438EEC71C1DDCAC00C312C6 /* FavoritesViewController.m */,
-				780698351C637A28000CC789 /* ConfirmationViewController.h */,
-				780698361C637A28000CC789 /* ConfirmationViewController.m */,
+				1413CB351C11E297003B3CC9 /* Supporting Files */,
 			);
 			path = domino;
 			sourceTree = "<group>";
@@ -326,6 +327,8 @@
 				14A652061C230F5F0076299F /* Assets.xcassets in Resources */,
 				7861DE041C760EB300A20498 /* Main.storyboard in Resources */,
 				14D61A7C1C1DB4DA002F8E01 /* Flyer.xib in Resources */,
+				78E74DF81C7619AF004AB037 /* ipad.storyboard in Resources */,
+				78E74DFA1C7619B5004AB037 /* iphone4s.storyboard in Resources */,
 				1480E1351C2997D5009FC5A6 /* flyer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +454,6 @@
 				1438EEC51C1DDA7100C312C6 /* WebstoreViewController.m in Sources */,
 				14959BCF1C120A12008E92D3 /* MainViewController.m in Sources */,
 				142A41451C1975DF006BF452 /* HomeViewController.m in Sources */,
-				780698371C637A28000CC789 /* ConfirmationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +584,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fr.qualia.NotifApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ed2b9cc9-fa8b-442a-a843-9fc6d175d8e7";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -599,7 +601,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fr.qualia.NotifApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ed2b9cc9-fa8b-442a-a843-9fc6d175d8e7";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

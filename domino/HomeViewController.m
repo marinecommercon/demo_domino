@@ -24,19 +24,12 @@
 {
     [super viewDidAppear:animated];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSLog([defaults objectForKey:@"showPopup"]);
     if([[defaults objectForKey:@"showPopup"] integerValue] == 1){
         [_popup setHidden:NO];
     } else {
         [_popup setHidden:YES];
     }
-    if([[defaults objectForKey:@"showPopupText"] integerValue] == 1){
-        
-        [_popupText setText:[defaults stringForKey:@"popupText"]];
-        [_popupText setHidden:NO];
-    } else {
-        [_popupText setHidden:YES];
-    }
-
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
@@ -59,10 +52,8 @@
 
 - (IBAction)buttonPopup:(id)sender {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setValue:@"0" forKey:@"showPopupText"];
     [defaults setValue:@"0" forKey:@"showPopup"];
     [_popup setHidden:YES];
-    [_popupText setHidden:YES];
-
+    
 }
 @end

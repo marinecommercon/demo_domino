@@ -20,7 +20,6 @@
 #define IS_ZOOMED_IPHONE_6_PLUS (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0 && IS_OS_8_OR_LATER && [UIScreen mainScreen].nativeScale < [UIScreen mainScreen].scale)
 
 #import "AddressViewController.h"
-#import "ConfirmationViewController.h"
 
 @interface AddressViewController ()
 
@@ -29,49 +28,22 @@
 @implementation AddressViewController
 @synthesize firstName;
 @synthesize lastName;
-@synthesize address;
-@synthesize city;
-@synthesize cp;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNeedsStatusBarAppearanceUpdate];
     [firstName setDelegate:self];
     [lastName setDelegate:self];
-    [address setDelegate:self];
-    [city setDelegate:self];
-    [cp setDelegate:self];
-       
+    
     // Set padding
     UIView *paddingView1    = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 20)];
     UIView *paddingView2    = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 20)];
-    UIView *paddingView3    = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 20)];
-    UIView *paddingView4    = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 20)];
-    UIView *paddingView5    = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 20)];
-    
-    firstName.leftView = paddingView1;
-    lastName.leftView  = paddingView2;
-    address.leftView   = paddingView3;
-    city.leftView      = paddingView4;
-    cp.leftView        = paddingView5;
-    
+    firstName.leftView     = paddingView1;
+    lastName.leftView      = paddingView2;
     firstName.leftViewMode = UITextFieldViewModeAlways;
     lastName.leftViewMode  = UITextFieldViewModeAlways;
-    address.leftViewMode  = UITextFieldViewModeAlways;
-    city.leftViewMode  = UITextFieldViewModeAlways;
-    cp.leftViewMode  = UITextFieldViewModeAlways;
-    
     firstName.autocapitalizationType = UITextAutocapitalizationTypeSentences;
     lastName.autocapitalizationType = UITextAutocapitalizationTypeSentences;
-    address.autocapitalizationType = UITextAutocapitalizationTypeSentences;
-    
-    firstName.autocorrectionType = UITextAutocorrectionTypeNo;
-    lastName.autocorrectionType = UITextAutocorrectionTypeNo;
-    address.autocorrectionType = UITextAutocorrectionTypeNo;
-    city.autocorrectionType = UITextAutocorrectionTypeNo;
-    
-    cp.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
-    
     _back.adjustsImageWhenHighlighted = NO;
 }
 
@@ -102,23 +74,114 @@
 
 - (IBAction)buttonNext:(id)sender {
     if(firstName.text && firstName.text.length > 0 &&
-       lastName.text  && lastName.text.length  > 0){
-    
+       lastName.text && lastName.text.length > 0){
+        
         NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
-    
-    [defaults setValue:@"1" forKey:@"showPopupText"];
-
-    ConfirmationViewController *confirmationViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"confirmation"];
-    
-    confirmationViewController.firstName = firstName.text;
-    confirmationViewController.lastName = lastName.text;
-    confirmationViewController.address = address.text;
-    confirmationViewController.cp = cp.text;
-    confirmationViewController.city = city.text;
-    
-    [self.navigationController pushViewController:confirmationViewController animated:YES];
-
+        
+        NSString* fileName = [self getPDFFileName];
+        NSString *combined = [NSString stringWithFormat:@"%@ %@", firstName.text, lastName.text];
+        [AddressViewController drawPDF:fileName withName:combined];
+        
+        UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
+        
+        printController.delegate = self;
+        
+        if(![defaults objectForKey:@"printerURL"] == NULL){
+            
+            self.selectedPrinter = [UIPrinter printerWithURL:[NSURL URLWithString:[defaults objectForKey:@"printerURL"]] ];
+            if (self.selectedPrinter) {
+                
+                UIPrintInfo *printInfo = [UIPrintInfo printInfo];
+                printInfo.outputType = UIPrintInfoOutputGeneral;
+                printInfo.outputType = UIPrintInfoOrientationPortrait;
+                printInfo.jobName = @"Print Template";
+                printController.printInfo = printInfo;
+                
+                NSString* path = [self getPDFFileName];
+                NSURL* imageURL = [NSURL fileURLWithPath:path isDirectory:NO];
+                printController.printingItem = imageURL;
+                
+                [printController printToPrinter:self.selectedPrinter completionHandler:^(UIPrintInteractionController *printController, BOOL completed, NSError *error){
+                    
+                    if (completed) {
+                        NSLog(@"printing successfully completed");
+                        [defaults setValue:@"1" forKey:@"showPopup"];
+                        [self.navigationController popViewControllerAnimated:YES];
+                    }
+                    
+                    else{
+                        NSLog(@"error occured while printing");
+                    }
+                }];
+            }
+        }
     }
+}
+
+-(NSString*)getPDFFileName
+{
+    NSString* fileName = @"Invoice.PDF";
+    NSArray *arrayPaths =
+    NSSearchPathForDirectoriesInDomains(
+                                        NSDocumentDirectory,
+                                        NSUserDomainMask,
+                                        YES);
+    NSString *path = [arrayPaths objectAtIndex:0];
+    NSString* pdfFileName = [path stringByAppendingPathComponent:fileName];
+    return pdfFileName;
+}
+
++(void)drawPDF:(NSString*)fileName withName:(NSString*)name
+{
+    // Create the PDF context using the default page size of 612 x 792.
+    UIGraphicsBeginPDFContextToFile(fileName, CGRectZero, nil);
+    // Mark the beginning of a new page.
+    UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, kDefaultPageWidth,
+                                              kDefaultPageHeight), nil);
+    [self drawFlyer];
+    [self drawNameOnFlyer:name];
+    
+    // Close the PDF context and write the contents out.
+    UIGraphicsEndPDFContext();
+}
+
++(void)drawFlyer
+{
+    NSArray* objects = [[NSBundle mainBundle] loadNibNamed:@"Flyer" owner:nil options:nil];
+    UIView* mainView = [objects objectAtIndex:0];
+    for (UIView* view in [mainView subviews]) {
+        if([view isKindOfClass:[UIImageView class]])
+        {
+            UIImage* logo = [UIImage imageNamed:@"flyer.png"];
+            [self drawImage:logo inRect:view.frame];
+        }
+    }
+}
+
++(void)drawImage:(UIImage*)image inRect:(CGRect)rect
+{
+    [image drawInRect:rect];
+}
+
++ (void)drawNameOnFlyer:(NSString*)nameString
+{
+    UIFont* theFont = [UIFont fontWithName:@"Helvetica" size:24];
+    
+    CGSize nameStringSize = [nameString sizeWithAttributes:
+                             @{NSFontAttributeName:
+                                   theFont}];
+    CGRect stringRect = CGRectMake(60.0,
+                                   490.0 + ((72.0 - nameStringSize.height) / 2.0) ,
+                                   520.0,
+                                   nameStringSize.height);
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:24],
+                                 NSForegroundColorAttributeName : [UIColor blackColor],NSParagraphStyleAttributeName: paragraphStyle, NSKernAttributeName : @(1.3f)};
+    
+    [nameString drawInRect:stringRect withAttributes:attributes];
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
