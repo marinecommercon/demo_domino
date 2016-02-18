@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1413CB371C11E297003B3CC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1413CB361C11E297003B3CC9 /* main.m */; };
+		1413CB3A1C11E297003B3CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1413CB391C11E297003B3CC9 /* AppDelegate.m */; };
+		1413CB401C11E297003B3CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1413CB3E1C11E297003B3CC9 /* Main.storyboard */; };
+		1413CB501C11E297003B3CC9 /* dominoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1413CB4F1C11E297003B3CC9 /* dominoTests.m */; };
+		1413CB5B1C11E297003B3CC9 /* dominoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1413CB5A1C11E297003B3CC9 /* dominoUITests.m */; };
+		142A41451C1975DF006BF452 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A41441C1975DF006BF452 /* HomeViewController.m */; };
+		1438EEC51C1DDA7100C312C6 /* WebstoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438EEC41C1DDA7100C312C6 /* WebstoreViewController.m */; };
+		1438EEC81C1DDCAC00C312C6 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1438EEC71C1DDCAC00C312C6 /* FavoritesViewController.m */; };
+		1480E1351C2997D5009FC5A6 /* flyer.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480E1341C2997D5009FC5A6 /* flyer.png */; };
+		14959BCF1C120A12008E92D3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14959BCE1C120A12008E92D3 /* MainViewController.m */; };
+		14959BD21C138D86008E92D3 /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14959BD11C138D86008E92D3 /* AddressViewController.m */; };
+		14A652061C230F5F0076299F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A652051C230F5F0076299F /* Assets.xcassets */; };
+		14D61A7C1C1DB4DA002F8E01 /* Flyer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14D61A7A1C1DB4DA002F8E01 /* Flyer.xib */; };
+		3E8D0654DE9A7CF5146E6755 /* libPods-dominoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D1AD72A0C5E4F6BF739652 /* libPods-dominoTests.a */; };
+		43B7E75A6DF46A3E89A41957 /* libPods-domino.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BB29A33CE61BA8257FE7F1 /* libPods-domino.a */; };
+		45F5E52C98BCBD44CCB7E201 /* libPods-dominoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E55071AE2C8B54B4694EF1 /* libPods-dominoUITests.a */; };
+		780698371C637A28000CC789 /* ConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780698361C637A28000CC789 /* ConfirmationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1413CB4C1C11E297003B3CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1413CB2A1C11E297003B3CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1413CB311C11E297003B3CC9;
+			remoteInfo = domino;
+		};
+		1413CB571C11E297003B3CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1413CB2A1C11E297003B3CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1413CB311C11E297003B3CC9;
+			remoteInfo = domino;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11D1AD72A0C5E4F6BF739652 /* libPods-dominoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dominoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1413CB361C11E297003B3CC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1413CB381C11E297003B3CC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1413CB391C11E297003B3CC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1413CB3F1C11E297003B3CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1413CB461C11E297003B3CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1413CB4F1C11E297003B3CC9 /* dominoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dominoTests.m; sourceTree = "<group>"; };
+		1413CB511C11E297003B3CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1413CB5A1C11E297003B3CC9 /* dominoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dominoUITests.m; sourceTree = "<group>"; };
+		1413CB5C1C11E297003B3CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142A41431C1975DF006BF452 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		142A41441C1975DF006BF452 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		1438EEC31C1DDA7100C312C6 /* WebstoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebstoreViewController.h; sourceTree = "<group>"; };
+		1438EEC41C1DDA7100C312C6 /* WebstoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebstoreViewController.m; sourceTree = "<group>"; };
+		1438EEC61C1DDCAC00C312C6 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		1438EEC71C1DDCAC00C312C6 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		147108711C186EF900373336 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		147108731C186F0F00373336 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		147108741C186F0F00373336 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		147108771C186F1700373336 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		147108791C186F2C00373336 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1471087B1C186F3200373336 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1471087D1C187B1000373336 /* domino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = domino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1471087E1C187B4600373336 /* dominoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dominoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1471087F1C187B4600373336 /* dominoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dominoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1480E1341C2997D5009FC5A6 /* flyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flyer.png; sourceTree = "<group>"; };
+		14959BCD1C120A12008E92D3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		14959BCE1C120A12008E92D3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		14959BD01C138D86008E92D3 /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		14959BD11C138D86008E92D3 /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		14A652051C230F5F0076299F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14D61A7A1C1DB4DA002F8E01 /* Flyer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Flyer.xib; sourceTree = "<group>"; };
+		26D2532496B04DE820163CFF /* Pods-domino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-domino.release.xcconfig"; path = "Pods/Target Support Files/Pods-domino/Pods-domino.release.xcconfig"; sourceTree = "<group>"; };
+		55338B659C7ECB21D20ED8B6 /* Pods-dominoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dominoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dominoTests/Pods-dominoTests.release.xcconfig"; sourceTree = "<group>"; };
+		59E55071AE2C8B54B4694EF1 /* libPods-dominoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dominoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F7BE97A6E0222D8EF3F4C2 /* Pods-domino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-domino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-domino/Pods-domino.debug.xcconfig"; sourceTree = "<group>"; };
+		780698351C637A28000CC789 /* ConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationViewController.h; sourceTree = "<group>"; };
+		780698361C637A28000CC789 /* ConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationViewController.m; sourceTree = "<group>"; };
+		A8728A36DF87F935AFA17659 /* Pods-dominoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dominoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dominoUITests/Pods-dominoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D4BB29A33CE61BA8257FE7F1 /* libPods-domino.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-domino.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BE66751539460B051D1E1F /* Pods-dominoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dominoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dominoUITests/Pods-dominoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4118510AF4DC0E0271640AA /* Pods-dominoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dominoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dominoTests/Pods-dominoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1413CB2F1C11E297003B3CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B7E75A6DF46A3E89A41957 /* libPods-domino.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1413CB481C11E297003B3CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E8D0654DE9A7CF5146E6755 /* libPods-dominoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1413CB531C11E297003B3CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F5E52C98BCBD44CCB7E201 /* libPods-dominoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1413CB291C11E297003B3CC9 = {
+			isa = PBXGroup;
+			children = (
+				1413CB341C11E297003B3CC9 /* domino */,
+				1413CB4E1C11E297003B3CC9 /* dominoTests */,
+				1413CB591C11E297003B3CC9 /* dominoUITests */,
+				F5CC4360CA0F3F19A0486421 /* Frameworks */,
+				1471087D1C187B1000373336 /* domino.app */,
+				1471087E1C187B4600373336 /* dominoUITests.xctest */,
+				1471087F1C187B4600373336 /* dominoTests.xctest */,
+				829230DD91D3A09D530AA414 /* Pods */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 1;
+		};
+		1413CB341C11E297003B3CC9 /* domino */ = {
+			isa = PBXGroup;
+			children = (
+				14A652051C230F5F0076299F /* Assets.xcassets */,
+				1480E1341C2997D5009FC5A6 /* flyer.png */,
+				14D61A7A1C1DB4DA002F8E01 /* Flyer.xib */,
+				1413CB3E1C11E297003B3CC9 /* Main.storyboard */,
+				1413CB351C11E297003B3CC9 /* Supporting Files */,
+				1413CB381C11E297003B3CC9 /* AppDelegate.h */,
+				1413CB391C11E297003B3CC9 /* AppDelegate.m */,
+				14959BCD1C120A12008E92D3 /* MainViewController.h */,
+				14959BCE1C120A12008E92D3 /* MainViewController.m */,
+				142A41431C1975DF006BF452 /* HomeViewController.h */,
+				142A41441C1975DF006BF452 /* HomeViewController.m */,
+				14959BD01C138D86008E92D3 /* AddressViewController.h */,
+				14959BD11C138D86008E92D3 /* AddressViewController.m */,
+				1438EEC31C1DDA7100C312C6 /* WebstoreViewController.h */,
+				1438EEC41C1DDA7100C312C6 /* WebstoreViewController.m */,
+				1438EEC61C1DDCAC00C312C6 /* FavoritesViewController.h */,
+				1438EEC71C1DDCAC00C312C6 /* FavoritesViewController.m */,
+				780698351C637A28000CC789 /* ConfirmationViewController.h */,
+				780698361C637A28000CC789 /* ConfirmationViewController.m */,
+			);
+			path = domino;
+			sourceTree = "<group>";
+		};
+		1413CB351C11E297003B3CC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1413CB461C11E297003B3CC9 /* Info.plist */,
+				1413CB361C11E297003B3CC9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1413CB4E1C11E297003B3CC9 /* dominoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1413CB4F1C11E297003B3CC9 /* dominoTests.m */,
+				1413CB511C11E297003B3CC9 /* Info.plist */,
+			);
+			path = dominoTests;
+			sourceTree = "<group>";
+		};
+		1413CB591C11E297003B3CC9 /* dominoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1413CB5A1C11E297003B3CC9 /* dominoUITests.m */,
+				1413CB5C1C11E297003B3CC9 /* Info.plist */,
+			);
+			path = dominoUITests;
+			sourceTree = "<group>";
+		};
+		829230DD91D3A09D530AA414 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69F7BE97A6E0222D8EF3F4C2 /* Pods-domino.debug.xcconfig */,
+				26D2532496B04DE820163CFF /* Pods-domino.release.xcconfig */,
+				F4118510AF4DC0E0271640AA /* Pods-dominoTests.debug.xcconfig */,
+				55338B659C7ECB21D20ED8B6 /* Pods-dominoTests.release.xcconfig */,
+				D5BE66751539460B051D1E1F /* Pods-dominoUITests.debug.xcconfig */,
+				A8728A36DF87F935AFA17659 /* Pods-dominoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5CC4360CA0F3F19A0486421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1471087B1C186F3200373336 /* Foundation.framework */,
+				147108791C186F2C00373336 /* CoreGraphics.framework */,
+				147108771C186F1700373336 /* QuartzCore.framework */,
+				147108731C186F0F00373336 /* CoreData.framework */,
+				147108741C186F0F00373336 /* CoreFoundation.framework */,
+				147108711C186EF900373336 /* UIKit.framework */,
+				D4BB29A33CE61BA8257FE7F1 /* libPods-domino.a */,
+				11D1AD72A0C5E4F6BF739652 /* libPods-dominoTests.a */,
+				59E55071AE2C8B54B4694EF1 /* libPods-dominoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1413CB311C11E297003B3CC9 /* domino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1413CB5F1C11E297003B3CC9 /* Build configuration list for PBXNativeTarget "domino" */;
+			buildPhases = (
+				99A606F1BD7AA1D48D46C8B4 /* Check Pods Manifest.lock */,
+				1413CB2E1C11E297003B3CC9 /* Sources */,
+				1413CB2F1C11E297003B3CC9 /* Frameworks */,
+				1413CB301C11E297003B3CC9 /* Resources */,
+				D9FF13B81CD51624DC861A95 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = domino;
+			productName = domino;
+			productReference = 1471087D1C187B1000373336 /* domino.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1413CB4A1C11E297003B3CC9 /* dominoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1413CB621C11E297003B3CC9 /* Build configuration list for PBXNativeTarget "dominoTests" */;
+			buildPhases = (
+				1926EA95DD5A58FC4D3D5F6B /* Check Pods Manifest.lock */,
+				1413CB471C11E297003B3CC9 /* Sources */,
+				1413CB481C11E297003B3CC9 /* Frameworks */,
+				1413CB491C11E297003B3CC9 /* Resources */,
+				29B4E655F1DE905CE4E35426 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1413CB4D1C11E297003B3CC9 /* PBXTargetDependency */,
+			);
+			name = dominoTests;
+			productName = dominoTests;
+			productReference = 1471087F1C187B4600373336 /* dominoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1413CB551C11E297003B3CC9 /* dominoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1413CB651C11E297003B3CC9 /* Build configuration list for PBXNativeTarget "dominoUITests" */;
+			buildPhases = (
+				AD62F4CAF7A425B5B60EC8B3 /* Check Pods Manifest.lock */,
+				1413CB521C11E297003B3CC9 /* Sources */,
+				1413CB531C11E297003B3CC9 /* Frameworks */,
+				1413CB541C11E297003B3CC9 /* Resources */,
+				F52D3DF0D34DAB6CF23C063D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1413CB581C11E297003B3CC9 /* PBXTargetDependency */,
+			);
+			name = dominoUITests;
+			productName = dominoUITests;
+			productReference = 1471087E1C187B4600373336 /* dominoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1413CB2A1C11E297003B3CC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Docapost;
+				TargetAttributes = {
+					1413CB311C11E297003B3CC9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = RUL6N3RMHC;
+					};
+					1413CB4A1C11E297003B3CC9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 1413CB311C11E297003B3CC9;
+					};
+					1413CB551C11E297003B3CC9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 1413CB311C11E297003B3CC9;
+					};
+				};
+			};
+			buildConfigurationList = 1413CB2D1C11E297003B3CC9 /* Build configuration list for PBXProject "domino" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1413CB291C11E297003B3CC9;
+			productRefGroup = 1413CB291C11E297003B3CC9;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1413CB311C11E297003B3CC9 /* domino */,
+				1413CB4A1C11E297003B3CC9 /* dominoTests */,
+				1413CB551C11E297003B3CC9 /* dominoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1413CB301C11E297003B3CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A652061C230F5F0076299F /* Assets.xcassets in Resources */,
+				14D61A7C1C1DB4DA002F8E01 /* Flyer.xib in Resources */,
+				1413CB401C11E297003B3CC9 /* Main.storyboard in Resources */,
+				1480E1351C2997D5009FC5A6 /* flyer.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1413CB491C11E297003B3CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1413CB541C11E297003B3CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1926EA95DD5A58FC4D3D5F6B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		29B4E655F1DE905CE4E35426 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dominoTests/Pods-dominoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99A606F1BD7AA1D48D46C8B4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD62F4CAF7A425B5B60EC8B3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FF13B81CD51624DC861A95 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-domino/Pods-domino-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F52D3DF0D34DAB6CF23C063D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dominoUITests/Pods-dominoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1413CB2E1C11E297003B3CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1413CB3A1C11E297003B3CC9 /* AppDelegate.m in Sources */,
+				14959BD21C138D86008E92D3 /* AddressViewController.m in Sources */,
+				1413CB371C11E297003B3CC9 /* main.m in Sources */,
+				1438EEC81C1DDCAC00C312C6 /* FavoritesViewController.m in Sources */,
+				1438EEC51C1DDA7100C312C6 /* WebstoreViewController.m in Sources */,
+				14959BCF1C120A12008E92D3 /* MainViewController.m in Sources */,
+				142A41451C1975DF006BF452 /* HomeViewController.m in Sources */,
+				780698371C637A28000CC789 /* ConfirmationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1413CB471C11E297003B3CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1413CB501C11E297003B3CC9 /* dominoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1413CB521C11E297003B3CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1413CB5B1C11E297003B3CC9 /* dominoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1413CB4D1C11E297003B3CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1413CB311C11E297003B3CC9 /* domino */;
+			targetProxy = 1413CB4C1C11E297003B3CC9 /* PBXContainerItemProxy */;
+		};
+		1413CB581C11E297003B3CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1413CB311C11E297003B3CC9 /* domino */;
+			targetProxy = 1413CB571C11E297003B3CC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1413CB3E1C11E297003B3CC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1413CB3F1C11E297003B3CC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1413CB5D1C11E297003B3CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1413CB5E1C11E297003B3CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1413CB601C11E297003B3CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69F7BE97A6E0222D8EF3F4C2 /* Pods-domino.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marine Commerçon (C5E8UTVUUH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marine Commerçon (C5E8UTVUUH)";
+				INFOPLIST_FILE = domino/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.qualia.NotifApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ed2b9cc9-fa8b-442a-a843-9fc6d175d8e7";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1413CB611C11E297003B3CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D2532496B04DE820163CFF /* Pods-domino.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marine Commerçon (C5E8UTVUUH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marine Commerçon (C5E8UTVUUH)";
+				INFOPLIST_FILE = domino/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.qualia.NotifApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ed2b9cc9-fa8b-442a-a843-9fc6d175d8e7";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1413CB631C11E297003B3CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4118510AF4DC0E0271640AA /* Pods-dominoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = dominoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.docapost.dominoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/domino.app/domino";
+			};
+			name = Debug;
+		};
+		1413CB641C11E297003B3CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55338B659C7ECB21D20ED8B6 /* Pods-dominoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = dominoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.docapost.dominoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/domino.app/domino";
+			};
+			name = Release;
+		};
+		1413CB661C11E297003B3CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BE66751539460B051D1E1F /* Pods-dominoUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = dominoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.docapost.dominoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = domino;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1413CB671C11E297003B3CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8728A36DF87F935AFA17659 /* Pods-dominoUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = dominoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.docapost.dominoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = domino;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1413CB2D1C11E297003B3CC9 /* Build configuration list for PBXProject "domino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1413CB5D1C11E297003B3CC9 /* Debug */,
+				1413CB5E1C11E297003B3CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1413CB5F1C11E297003B3CC9 /* Build configuration list for PBXNativeTarget "domino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1413CB601C11E297003B3CC9 /* Debug */,
+				1413CB611C11E297003B3CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1413CB621C11E297003B3CC9 /* Build configuration list for PBXNativeTarget "dominoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1413CB631C11E297003B3CC9 /* Debug */,
+				1413CB641C11E297003B3CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1413CB651C11E297003B3CC9 /* Build configuration list for PBXNativeTarget "dominoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1413CB661C11E297003B3CC9 /* Debug */,
+				1413CB671C11E297003B3CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1413CB2A1C11E297003B3CC9 /* Project object */;
+}
